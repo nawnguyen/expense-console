@@ -30,7 +30,7 @@ void main(List<String> args) {
   // });
 
   // students.removeAt(7);
-  var filteredStudents = students.where((element) => false);
+  var filteredStudents = students.where((element) => element.code == '1501062');
   filteredStudents.forEach((ele) {
     print('Tên: ${ele.name}, MSV: ${ele.code}');
   });
